@@ -114,5 +114,4 @@ with tf.Graph().as_default():
 
             sampleRewards = sampleRewards
             sess.run(opt, feed_dict = {observations_var: observations, actions_var: actions, returns_var: returns, sigmas_var: sigmas})
-            # f_train(observations, actions, returns)
             print("Iteration " + str(i) + " rewards: " + str(sampleRewards))
