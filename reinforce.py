@@ -89,7 +89,7 @@ with tf.Graph().as_default():
                     if terminal:
                         # Finish rollout if terminal state reached
                         break
-                    sampleRewards += reward / (SAMPLES * N)
+                    sampleRewards += reward / (N)
 
                 returns = []
                 return_so_far = 0
